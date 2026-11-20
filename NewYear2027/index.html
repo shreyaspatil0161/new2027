@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2027</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sound Toggle Button -->
+    <button id="sound-toggle" class="sound-btn" title="Toggle Firework Sound">🔇 Sound Off</button>
+
+    <!-- Canvas for Firecrackers & Rockets -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <div class="container">
+        <header>
+            <p id="sender-badge" class="sender-badge hidden"></p>
+            <h1 id="main-heading">Countdown to New Year 2027</h1>
+            <p class="subtitle">Get ready to welcome a brand new chapter filled with joy and success!</p>
+        </header>
+
+        <!-- Countdown Timer -->
+        <div id="countdown" class="countdown-box">
+            <div class="time-unit">
+                <span id="days">00</span>
+                <p>Days</p>
+            </div>
+            <div class="time-unit">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="time-unit">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="time-unit">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+
+        <!-- New Year Wishes Section -->
+        <div class="wishes-card">
+            <h2>✨ New Year 2027 Wishes ✨</h2>
+            <p id="wish-text">May 2027 bring you endless opportunities, good health, and happiness!</p>
+            <div class="button-group">
+                <button id="new-wish-btn">Get Another Wish</button>
+                <button id="burst-btn" class="secondary-btn">🎆 Mega Fireworks</button>
+            </div>
+        </div>
+
+        <!-- Personalize & Share Section -->
+        <div class="share-card">
+            <h3>Personalize & Share Your Wish</h3>
+            <div class="input-group">
+                <input type="text" id="name-input" placeholder="Enter your name..." maxlength="25">
+                <button id="share-btn">Copy Wish Link</button>
+            </div>
+            <p id="copy-status" class="copy-status"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
